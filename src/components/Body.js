@@ -10,6 +10,7 @@ import { onAuthStateChanged } from 'firebase/auth'
 import Browse from './Browse'
 import Login from './Login'
 import AcademicForm from './Academic'
+
 const Body = () => {
     const dispatch=useDispatch()
     const approuter =createBrowserRouter([
@@ -28,7 +29,8 @@ const Body = () => {
         {
             path:"/academic",
             element:<AcademicForm/>
-        }
+        },
+        
     ])
     useEffect(()=>{
         onAuthStateChanged(auth, (user) => {

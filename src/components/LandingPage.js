@@ -209,6 +209,7 @@ const Landingpage = () => {
               Enter your message
             </label>
             <input
+            
               type="text"
               name="message"
               required
