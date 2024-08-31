@@ -12,7 +12,7 @@ const Navbar = () => {
       <li>
         <Link
           className="block px-4 py-2 hover:text-blue-600 transition-colors"
-          to="/career"
+          to="/careerDetails"
         >
           Career
         </Link>

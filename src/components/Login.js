@@ -117,7 +117,7 @@ const dispatch=useDispatch()
 
           <input
            ref={passwordref}
-           type='passwordref' 
+           type='password' 
            placeholder="password" 
            className='p-3 m-4 border border-gray-400 w-full rounded-lg'/>
           <p className='text-red-500 font-semibold m-4'>{errormessage}</p>

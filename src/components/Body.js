@@ -10,6 +10,9 @@ import { onAuthStateChanged } from 'firebase/auth'
 import Browse from './Browse'
 import Login from './Login'
 import AcademicForm from './Academic'
+import Career from './Career'
+import DetailsPage from './DetailsPage'
+import CollegeData from './College'
 const Body = () => {
     const dispatch=useDispatch()
     const approuter =createBrowserRouter([
@@ -28,6 +31,18 @@ const Body = () => {
         {
             path:"/academic",
             element:<AcademicForm/>
+        },
+        {
+          path:"/careerDetails",
+          element:<Career/>
+        },
+        {
+          path:"/DetailsPage",
+          element:<DetailsPage/>
+        },
+        {
+          path:"/College",
+          element:<CollegeData/>
         }
     ])
     useEffect(()=>{
